@@ -1,0 +1,22 @@
+body {
+    text-align: center;                  
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#login_name,
+#pass_name {
+    padding: 1%;
+    margin-bottom: 5%;
+    width: 60%;
+}
+
+button {
+    padding: 1%;
+    margin-top: 3%;
+    width: 63%;
+}
