@@ -1,21 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-function Nav() {
-  return (
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/">Guestbook</Link>
-      <Link to="/">Blog</Link>
-    </nav>
-  );
-}
+import './Header.css';
 
 export default function Header() {
   return (
     <header>
-      <div>Logo</div>
-      <Nav />
+      <nav className="navbar">
+        <span className="navbar-toggle" id="js-navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </span>
+        <a className="logo">
+          <Link to="#">Kofee Blog</Link>
+        </a>
+        <ul className="main-nav" id="js-menu">
+          <li>
+            <Link to="/" className="nav-links">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/guestbook" className="nav-links">
+              Guestbook
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }
