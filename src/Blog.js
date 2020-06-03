@@ -1,13 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import KoffeeBlogContext from './KoffeeBlogContext';
+import './Blog.css';
 
-export default function Blog() {
+export default function Blog({ blog }) {
   return (
-    <div className="blog-item">
-      <h2>Blog title goes here</h2>
-      <p>Description goes here</p>
-      <p>Date goes here</p>
-    </div>
+    <KoffeeBlogContext.Consumer>
+      {(context) => (
+        <div className="blog-item">
+          <Link to={`/blog/${blog.id}`}>
+            <h2>{blog.title}</h2>
+          </Link>
+          <p>
+            this is a image of person. this is a image of person. this is a image of person. this is a image of person.
+          </p>
+          <p>2020-05-10</p>
+        </div>
+      )}
+    </KoffeeBlogContext.Consumer>
   );
 }
-
-// Need to use Link to make each Blog item's URL to open BlogPage
