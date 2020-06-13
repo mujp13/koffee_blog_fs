@@ -5,7 +5,8 @@ import './Blog.css';
 
 export default function Blog({ blog }) {
   return (
-    <KoffeeBlogContext.Consumer>
+    <div>hello</div>
+    /*<KoffeeBlogContext.Consumer>
       {(context) => (
         <div className="blog-item">
           <Link to={`/blog/${blog.id}`}>
@@ -17,6 +18,6 @@ export default function Blog({ blog }) {
           <p>2020-05-10</p>
         </div>
       )}
-    </KoffeeBlogContext.Consumer>
+    </KoffeeBlogContext.Consumer>*/
   );
 }
