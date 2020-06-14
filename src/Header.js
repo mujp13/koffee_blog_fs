@@ -39,7 +39,7 @@ export default function Header() {
             </Link>
           </li>
           <li className="search-container">
-            <input type="text" className="nav-links" placeholder="Search.." />
+            <input type="text" className="nav-links words" placeholder="Search.." required />
             <button type="submit">
               <i className="fa fa-search"></i>
             </button>

@@ -5,19 +5,15 @@ import './Blog.css';
 
 export default function Blog({ blog }) {
   return (
-    <div>hello</div>
-    /*<KoffeeBlogContext.Consumer>
-      {(context) => (
-        <div className="blog-item">
-          <Link to={`/blog/${blog.id}`}>
-            <h2>{blog.title}</h2>
-          </Link>
-          <p>
-            this is a image of person. this is a image of person. this is a image of person. this is a image of person.
-          </p>
-          <p>2020-05-10</p>
-        </div>
-      )}
-    </KoffeeBlogContext.Consumer>*/
+    <>
+      <div className="blog-item">
+        <h2>Blog title</h2>
+        <p>
+          this is a image of person. this is a image of person. this is a image of person. this is a image of person.
+        </p>
+        <p>2020-05-10</p>
+      </div>
+      <img class="cover" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/object-fit2.jpg"></img>
+    </>
   );
 }
