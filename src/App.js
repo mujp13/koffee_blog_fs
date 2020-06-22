@@ -11,6 +11,13 @@ class App extends Component {
     error: null,
     contentIsLoaded: false,
     blogs: [],
+    guestbooks: [],
+  };
+
+  addGuestbook = (gb) => {
+    this.setState({
+      gb: [...this.state.guestbooks, gb],
+    });
   };
 
   componentDidMount() {
@@ -36,11 +43,36 @@ class App extends Component {
           });
         }
       );
+
+    fetch('http://localhost:8000/api/guestbook', {
+      method: 'GET',
+      headers: {
+        'content-type': 'application/json',
+      },
+    })
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          this.setState({
+            contentIsLoaded: true,
+            guestbooks: result,
+          });
+          console.log(result);
+        },
+        (error) => {
+          this.setState({
+            contentIsLoaded: false,
+            error,
+          });
+        }
+      );
   }
 
   render() {
     const contextValue = {
       blogs: this.state.blogs,
+      guestbooks: this.state.guestbooks,
+      addGuestbook: this.addGuestbook,
     };
 
     return (

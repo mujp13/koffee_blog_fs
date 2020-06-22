@@ -2,7 +2,8 @@ import React from 'react';
 
 const KoffeeBlogContext = React.createContext({
   blogs: [],
-  deleteBlog: () => {},
+  guestbooks: [],
+  addGuestbook: () => {},
 });
 
 export default KoffeeBlogContext;
