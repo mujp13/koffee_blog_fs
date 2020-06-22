@@ -1,9 +1,10 @@
 import React from 'react';
+import './Footer.css';
 
 export default function Footer() {
   return (
-    <footer>
-      2020 <a href="/">Koffee Blog</a> All rights reserved.
+    <footer className="footer">
+      Welcome to <a href="/">Koffee Blog</a>
     </footer>
   );
 }

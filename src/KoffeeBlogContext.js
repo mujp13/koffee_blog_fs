@@ -1,7 +1,7 @@
 import React from 'react';
 
 const KoffeeBlogContext = React.createContext({
-  contents: [],
+  blogs: [],
   deleteBlog: () => {},
 });
 

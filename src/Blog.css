@@ -1,4 +1,19 @@
 .blog-item {
   display: flex;
   padding: 20px;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.blog-content {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.blog-image {
+  max-width: 500px;
+  margin: 0 auto;
 }

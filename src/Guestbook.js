@@ -1,16 +1,23 @@
 import React, { Component } from 'react';
-
-function GuestPost() {
-  return (
-    <div className="guest-post">
-      <h3>Kevin Park</h3>
-      <p>Your website is awesome. Thanks! I will visit your website next time!</p>
-      <p id="date">05.10.2020</p>
-    </div>
-  );
-}
+import './Guestbook.css';
+import GuestPost from './GuestPost';
 
 export default class Guestbook extends Component {
+  state = {
+    guestPosts: [
+      {
+        name: 'Mario',
+        comment: 'hello world',
+        date: new Date(),
+      },
+      {
+        name: 'Kevin',
+        comment: 'hello world',
+        date: new Date(),
+      },
+    ],
+  };
+
   render() {
     return (
       <>
@@ -24,11 +31,16 @@ export default class Guestbook extends Component {
             <textarea name="comment" id="comment" placeholder="Put your precious comments here" required></textarea>
           </div>
           <div className="send__button">
-            <button type="submit">Send</button>
+            <button className="button" type="submit">
+              Send
+            </button>
           </div>
         </form>
-        <GuestPost />
-        <GuestPost />
+        <section classsName="guest-comment">
+          {this.state.guestPosts.map((post) => (
+            <GuestPost name={post.name} comment={post.comment} date={post.date} />
+          ))}
+        </section>
       </>
     );
   }

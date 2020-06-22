@@ -1,19 +1,28 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import KoffeeBlogContext from './KoffeeBlogContext';
+import React, { Component } from 'react';
 import './Blog.css';
 
-export default function Blog({ blog }) {
-  return (
-    <>
-      <div className="blog-item">
-        <h2>Blog title</h2>
-        <p>
-          this is a image of person. this is a image of person. this is a image of person. this is a image of person.
-        </p>
-        <p>2020-05-10</p>
-      </div>
-      <img class="cover" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/object-fit2.jpg"></img>
-    </>
-  );
+export default class Blog extends Component {
+  state = {
+    show: false,
+  };
+
+  clickShowMore = () => {
+    this.setState({
+      show: !this.state.show,
+    });
+  };
+
+  render() {
+    return (
+      <>
+        <div className="blog-item">
+          <h2>{this.props.title}</h2>
+          <p className={this.state.show ? 'show-detail' : 'blog-content'}>{this.props.content}</p>
+          <button onClick={this.clickShowMore}>{this.state.show ? 'Hide' : 'Show More'}</button>
+          <p>{this.props.date_published}</p>
+          <img className="blog-image" src={this.props.imageurl} />
+        </div>
+      </>
+    );
+  }
 }

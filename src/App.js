@@ -10,7 +10,7 @@ class App extends Component {
   state = {
     error: null,
     contentIsLoaded: false,
-    contents: [],
+    blogs: [],
   };
 
   componentDidMount() {
@@ -25,7 +25,7 @@ class App extends Component {
         (result) => {
           this.setState({
             contentIsLoaded: true,
-            contents: result,
+            blogs: result,
           });
           console.log(result);
         },
@@ -40,7 +40,7 @@ class App extends Component {
 
   render() {
     const contextValue = {
-      contents: this.state.contents,
+      blogs: this.state.blogs,
     };
 
     return (

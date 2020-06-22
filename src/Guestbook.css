@@ -1,0 +1,18 @@
+.Login__form {
+  padding: 20px;
+}
+
+.button {
+  width: 100px;
+  float: right;
+}
+
+#comment {
+  clear: right;
+  width: 99.4%;
+  height: 100px;
+}
+
+#person_name {
+  padding: 1%;
+}
