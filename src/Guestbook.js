@@ -41,7 +41,7 @@ export default class Guestbook extends Component {
       .then((data) => {
         console.log(data);
         this.context.addGuestbook(data);
-        //this.props.history.push('/guestbook');
+        this.props.history.push('/guestbook');
       })
       .catch((error) => {
         this.setState({ error });
