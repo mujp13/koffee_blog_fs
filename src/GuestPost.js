@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './GuestPost.css';
+import KoffeeBlogContext from './KoffeeBlogContext';
 
-export default function GuestPost(props) {
-  return (
-    <div className="guest-post">
-      <h3>{props.name}</h3>
-      <p>{props.comment}</p>
-      <p>{props.date.toString()}</p>
-    </div>
-  );
+export default class GuestPost extends Component {
+  static contextType = KoffeeBlogContext;
+
+  render() {
+    //const { guestbooks } = this.context;
+    return (
+      <div className="guest-post">
+        <h3>{this.context.guestbooks.name}</h3>
+        <p>{this.context.guestbooks.comment}</p>
+        <p>{this.context.guestbooks.date_published}</p>
+      </div>
+    );
+  }
 }

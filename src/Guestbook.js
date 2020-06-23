@@ -8,7 +8,6 @@ export default class Guestbook extends Component {
 
   state = {
     error: null,
-    guestbooks: [],
   };
 
   handleSubmit = (e) => {
@@ -40,9 +39,9 @@ export default class Guestbook extends Component {
         return res.json();
       })
       .then((data) => {
-        name.value = '';
+        console.log(data);
         this.context.addGuestbook(data);
-        this.props.history.push('/guestbook');
+        //this.props.history.push('/guestbook');
       })
       .catch((error) => {
         this.setState({ error });
@@ -59,8 +58,8 @@ export default class Guestbook extends Component {
             {error && <p>{error.messsage}</p>}
           </div>
           <div>
-            <label htmlFor="person_name" />
-            <input type="text" name="person_name" id="person_name" placeholder="Name" required />
+            <label htmlFor="name" />
+            <input type="text" name="name" id="name" placeholder="Name" required />
           </div>
           <div>
             <label htmlFor="comment" />
@@ -73,8 +72,8 @@ export default class Guestbook extends Component {
           </div>
         </form>
         <section classsName="guest-comment">
-          {this.state.guestbooks.map((post) => (
-            <GuestPost name={post.name} comment={post.comment} date={post.date} />
+          {this.context.guestbooks.map((post) => (
+            <GuestPost name={post.name} comment={post.comment} date={post.date_published} />
           ))}
         </section>
       </>
