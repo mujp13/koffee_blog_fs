@@ -16,7 +16,7 @@ class App extends Component {
 
   addGuestbook = (gb) => {
     this.setState({
-      gb: [...this.state.guestbooks, gb],
+      guestbooks: [...this.state.guestbooks, gb],
     });
   };
 

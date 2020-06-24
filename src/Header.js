@@ -1,4 +1,4 @@
-import React from 'react';
+import React /* Component */ from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
@@ -12,10 +12,23 @@ function activate() {
 }
 
 export default function Header() {
+  /*
+  state = {
+    show: false,
+  };
+  */
+  /*
+  changeShow = () => {
+    this.setState({
+      show: !this.state.show,
+    });
+  };
+*/
   return (
     <header>
       <nav className="navbar">
         <span
+          /*className={'navbar-toggle ' + this.state.show ? 'active' : ''}*/
           className="navbar-toggle"
           id="js-navbar-toggle"
           onClick={() => {

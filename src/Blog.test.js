@@ -1,13 +1,13 @@
 // make React available
 import React from 'react';
 
-import { MemoryRouter } from 'react-router-dom';
-
 // make the ReactDOM available, necessary for rendering the component
 import ReactDOM from 'react-dom';
 
 // make the App component available
-import App from './App';
+import Blog from './Blog';
+
+import { MemoryRouter } from 'react-router-dom';
 
 // this is the test case
 it('renders without crashing', () => {
@@ -15,12 +15,7 @@ it('renders without crashing', () => {
   const div = document.createElement('div');
 
   // render the component, this is the actual test, if something is wrong it will fail here
-  ReactDOM.render(
-    <MemoryRouter>
-      <App />
-    </MemoryRouter>,
-    div
-  );
+  ReactDOM.render(<Blog />, div);
 
   // clean up code
   ReactDOM.unmountComponentAtNode(div);
@@ -31,7 +26,7 @@ it('renders without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(
     <MemoryRouter>
-      <App />
+      <Blog />
     </MemoryRouter>,
     div
   );
