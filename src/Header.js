@@ -25,7 +25,7 @@ export default function Header() {
           <i className="fas fa-bars"></i>
         </span>
         <a className="logo">
-          <Link to="#">put a logo</Link>
+          <Link to="#">KOFFEE</Link>
         </a>
         <ul className="main-nav" id="js-menu">
           <li>
@@ -38,12 +38,6 @@ export default function Header() {
               Guestbook
             </Link>
           </li>
-          {/*<li className="search-container">
-            <input type="text" className="nav-links words" placeholder="Search.." required />
-            <button type="submit">
-              <i className="fa fa-search"></i>
-            </button>
-          </li>*/}
         </ul>
       </nav>
       <h2 className="main-note"> Welcome to Koffeeblog! What do you want to know about coffee?</h2>
