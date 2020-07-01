@@ -71,7 +71,7 @@ export default class Guestbook extends Component {
             </button>
           </div>
         </form>
-        <section classsName="guest-comment">
+        <section className="guest-comment">
           {this.context.guestbooks.map((post) => (
             <GuestPost name={post.name} comment={post.comment} date={post.date_published} />
           ))}

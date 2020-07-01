@@ -1,28 +1,20 @@
 import React from 'react';
-import { MemoryRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Guestbook from './Guestbook';
+import { MemoryRouter } from 'react-router-dom';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
+  ReactDOM.render(<Guestbook />, div);
 
-  ReactDOM.render(
-    <MemoryRouter>
-      <App />
-    </MemoryRouter>,
-    div
-  );
-
-  // clean up code
   ReactDOM.unmountComponentAtNode(div);
 });
 
-//snapshot
 it('renders without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(
     <MemoryRouter>
-      <App />
+      <Guestbook />
     </MemoryRouter>,
     div
   );
