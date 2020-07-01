@@ -21,7 +21,7 @@ class App extends Component {
   };
 
   componentDidMount() {
-    fetch('http://localhost:8000/api/contents', {
+    fetch('https://friendly-donair-37840.herokuapp.com/api/contents', {
       method: 'GET',
       headers: {
         'content-type': 'application/json',
@@ -44,7 +44,7 @@ class App extends Component {
         }
       );
 
-    fetch('http://localhost:8000/api/guestbook', {
+    fetch('https://friendly-donair-37840.herokuapp.com/api/guestbook', {
       method: 'GET',
       headers: {
         'content-type': 'application/json',

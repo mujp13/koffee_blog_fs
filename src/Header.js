@@ -38,7 +38,7 @@ export default function Header() {
           <i className="fas fa-bars"></i>
         </span>
         <a className="logo">
-          <Link to="#">KOFFEE</Link>
+          <Link to="/">KB</Link>
         </a>
         <ul className="main-nav" id="js-menu">
           <li>

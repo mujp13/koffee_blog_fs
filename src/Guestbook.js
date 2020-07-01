@@ -21,7 +21,7 @@ export default class Guestbook extends Component {
 
     this.setState({ error: null });
 
-    fetch('http://localhost:8000/api/guestbook', {
+    fetch('https://friendly-donair-37840.herokuapp.com/api/guestbook', {
       method: 'POST',
       body: JSON.stringify(guestbook),
       headers: {
@@ -53,6 +53,7 @@ export default class Guestbook extends Component {
 
     return (
       <>
+        <h2>Thanks for visiting! Please come again!</h2>
         <form className="Login__form" onSubmit={this.handleSubmit}>
           <div className="addGuestbook" role="alert">
             {error && <p>{error.messsage}</p>}
