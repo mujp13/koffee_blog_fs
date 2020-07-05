@@ -42,7 +42,7 @@ https://koffeeblg-capstone.vercel.app
 
 ## Screenshot
 
-![koffeeblog screenshot](www.urltomyimage.com/myimage.png)
+![koffeeblog screenshot](https://github.com/mujp13/koffee_blog_fs/blob/master/github_screenshot.PNG)
 
 ## Built With
 
