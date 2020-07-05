@@ -24,10 +24,35 @@ https://koffeeblg-capstone.vercel.app
 
 ## API Overview
 
-### /api/contents
+## GET ### /api/contents
+
+{
+title: Text,
+typeid: Text,
+content: Text,
+imageURL : Text
+}
+
+## GET ### /api/guestbook
+
+{
+title: Text,
+comment: Text
+}
 
 ## Screenshot
 
 ![koffeeblog screenshot](www.urltomyimage.com/myimage.png)
 
-## Screenshot
+## Built With
+
+Node - Run-time environment
+Express - Web application framework
+Postgres DB - Database
+Mocha - Testing
+Chai - Testing
+Javascript - Front-end development
+
+## Authors
+
+Keun Suk Park - Full-stack
