@@ -26,18 +26,18 @@ https://koffeeblg-capstone.vercel.app
 
 ## GET ### /api/contents
 
-{
-title: Text,
-typeid: Text,
-content: Text,
-imageURL : Text
+{  
+ title: Text,  
+ typeid: Text,  
+ content: Text,  
+ imageURL : Text  
 }
 
 ## GET ### /api/guestbook
 
-{
-title: Text,
-comment: Text
+{  
+ title: Text,  
+ comment: Text  
 }
 
 ## Screenshot
@@ -46,11 +46,11 @@ comment: Text
 
 ## Built With
 
-Node - Run-time environment
-Express - Web application framework
-Postgres DB - Database
-Mocha - Testing
-Chai - Testing
+Node - Run-time environment  
+Express - Web application framework  
+Postgres DB - Database  
+Mocha - Testing  
+Chai - Testing  
 Javascript - Front-end development
 
 ## Authors
