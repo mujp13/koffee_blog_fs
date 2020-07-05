@@ -12,17 +12,19 @@ https://koffeeblg-capstone.vercel.app
 
 ## API Overview
 
-/api
-.
-├── /contents
-│ └── GET
-│
-├── /guestbook
-│ └── GET
-│ └── POST
+/api  
+.  
+├── /contents  
+│ └── GET  
+│  
+├── /guestbook  
+│ └── GET  
+│ └── POST  
 │ └── /
 
-## API Overview ###/api/contents
+## API Overview
+
+### /api/contents
 
 ## Screenshot
 
