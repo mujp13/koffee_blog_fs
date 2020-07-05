@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Blog from './Blog';
+import Blog from './Blog/Blog';
 import './BlogsPage.css';
-import KoffeeBlogContext from './KoffeeBlogContext';
+import KoffeeBlogContext from './KoffeeBlogContext/KoffeeBlogContext';
 
 export default class BlogsPage extends Component {
   static contextType = KoffeeBlogContext;

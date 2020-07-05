@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import BlogsPage from './BlogsPage';
-import Guestbook from './Guestbook';
+import Header from './Header/Header';
+import Footer from './Footer/Footer';
+import BlogsPage from './BlogsPage/BlogsPage';
+import Guestbook from './Guestbook/Guestbook';
 import { Route } from 'react-router-dom';
-import KoffeeBlogContext from './KoffeeBlogContext';
+import KoffeeBlogContext from './KoffeeBlogContext/KoffeeBlogContext';
 
 class App extends Component {
   state = {
