@@ -26,6 +26,8 @@ https://koffeeblg-capstone.vercel.app
 
 ## GET ### /api/contents
 
+Returns an array of blog items with associated images
+
 {  
  title: Text,  
  typeid: Text,  
@@ -34,6 +36,17 @@ https://koffeeblg-capstone.vercel.app
 }
 
 ## GET ### /api/guestbook
+
+Returns an array of user comments left in Guestbook page
+
+{  
+ title: Text,  
+ comment: Text  
+}
+
+## POST ### /api/guestbook
+
+A typical user comment submission via a POST request with "title" and "comments" as text values
 
 {  
  title: Text,  
