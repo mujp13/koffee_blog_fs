@@ -2,41 +2,10 @@ import React /* Component */ from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
-function activate() {
-  let mainNav = document.getElementById('js-menu');
-  let navBarToggle = document.getElementById('js-navbar-toggle');
-
-  navBarToggle.addEventListener('click', function () {
-    mainNav.classList.toggle('active');
-  });
-}
-
 export default function Header() {
-  /*
-  state = {
-    show: false,
-  };
-  */
-  /*
-  changeShow = () => {
-    this.setState({
-      show: !this.state.show,
-    });
-  };
-*/
   return (
     <header>
       <nav className="navbar">
-        <span
-          /*className={'navbar-toggle ' + this.state.show ? 'active' : ''}*/
-          className="navbar-toggle"
-          id="js-navbar-toggle"
-          onClick={() => {
-            activate();
-          }}
-        >
-          <i className="fas fa-bars"></i>
-        </span>
         <a className="logo">
           <Link to="/">KB</Link>
         </a>

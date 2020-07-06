@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import KoffeeBlogContext from './KoffeeBlogContext/KoffeeBlogContext';
+import KoffeeBlogContext from '../KoffeeBlogContext/KoffeeBlogContext';
 import './Guestbook.css';
-import GuestPost from './GuestPost/GuestPost';
+import GuestPost from '../GuestPost/GuestPost';
 
 export default class Guestbook extends Component {
   static contextType = KoffeeBlogContext;
