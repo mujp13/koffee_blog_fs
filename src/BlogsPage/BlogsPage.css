@@ -1,3 +1,9 @@
+body {
+  background-image: url('/coffee_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .blog-type {
   text-align: center;
 }
