@@ -7,6 +7,11 @@
   text-align: center;
 }
 
+.blog-title {
+  text-shadow: 2px 2px #3f4140;
+  font-size: 50px;
+}
+
 .blog-content {
   text-overflow: ellipsis;
   overflow: hidden;
@@ -16,6 +21,7 @@
 .blog-image {
   max-width: 350px;
   margin: 0 auto;
+  box-shadow: 10px 10px 5px #ccc;
 }
 
 button {

@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900i&display=swap');
+
 body {
-  font-family: 'Josefin Sans', sans-serif;
-  background: url(/coffee_bg.jpg);
+  /*font-family: 'Josefin Sans', sans-serif;*/
+  background: rgba(231, 153, 80, 0.836);
+  font-family: 'Montserrat', sans-serif;
 }
 
 .main-note {
@@ -10,19 +13,23 @@ body {
 
 .navbar {
   font-size: 18px;
-  background-image: linear-gradient(260deg, #a77d30 0%, #eb8b13 100%);
+  background-image: url(../coffee_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding-bottom: 10px;
 }
 
 .main-nav {
   list-style-type: none;
+  font-size: 30px;
 }
 
 .nav-links,
 .logo {
   text-decoration: none;
   color: black;
+  text-shadow: 2px 2px #ff8800;
 }
 
 .main-nav li {
@@ -32,7 +39,7 @@ body {
 
 .logo {
   display: inline-block;
-  font-size: 22px;
+  font-size: 30px;
   margin-top: 10px;
   margin-left: 20px;
 }

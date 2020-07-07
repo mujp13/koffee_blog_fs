@@ -22,8 +22,11 @@ export default class BlogsPage extends Component {
       <>
         <div className="blog-type">
           {this.state.types.map((type) => (
-            <button onClick={(e) => this.changeType(type)}>{type}</button>
+            <button className="type-button" onClick={(e) => this.changeType(type)}>
+              {type}
+            </button>
           ))}
+          <div class="ph-clear"></div>
         </div>
         <div className="blog-list">
           {this.state.filteredType
