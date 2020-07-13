@@ -3,6 +3,7 @@ import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import BlogsPage from './BlogsPage/BlogsPage';
 import Guestbook from './Guestbook/Guestbook';
+import About from './About/About';
 import { Route } from 'react-router-dom';
 import KoffeeBlogContext from './KoffeeBlogContext/KoffeeBlogContext';
 
@@ -80,6 +81,7 @@ class App extends Component {
         <Header />
         <Route exact path="/" component={BlogsPage} />
         <Route exact path="/guestbook" component={Guestbook} />
+        <Route exact path="/about" component={About} />
         <Footer />
       </KoffeeBlogContext.Provider>
     );

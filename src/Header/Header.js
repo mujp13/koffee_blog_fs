@@ -11,6 +11,11 @@ export default function Header() {
         </a>
         <ul className="main-nav" id="js-menu">
           <li>
+            <Link to="/about" className="nav-links">
+              About
+            </Link>
+          </li>
+          <li>
             <Link to="/" className="nav-links">
               Home
             </Link>
