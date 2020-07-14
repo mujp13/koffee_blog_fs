@@ -9,7 +9,7 @@ export default function About() {
         brewing methods. You are more than welcome to post your own blogs to any of the categories if you want to make
         this website more informative.
       </h2>
-      <img src={'./thankyou.PNG'} width="500" height="333" />
+      <img src={'../thankyou.PNG'} width="500" height="333" />
     </>
   );
 }

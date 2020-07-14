@@ -36,7 +36,13 @@ export default class BlogsPage extends Component {
                   <Blog title={blog.title} content={blog.content} imageurl={blog.imageurl} date={blog.date_published} />
                 ))
             : this.context.blogs.map((blog) => (
-                <Blog title={blog.title} content={blog.content} imageurl={blog.imageurl} date={blog.date_published} />
+                <Blog
+                  title={blog.title}
+                  content={blog.content}
+                  imageurl={blog.imageurl}
+                  rating={blog.rating}
+                  location={blog.location}
+                />
               ))}
         </div>
       </>

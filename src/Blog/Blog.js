@@ -19,7 +19,8 @@ export default class Blog extends Component {
           <h2 className="blog-title">{this.props.title}</h2>
           <p className={this.state.show ? 'show-detail' : 'blog-content'}>{this.props.content}</p>
           <button onClick={this.clickShowMore}>{this.state.show ? 'Hide' : 'Show More'}</button>
-          <p>{this.props.date_published}</p>
+          <p>Rating: {this.props.rating}</p>
+          <p>Location: {this.props.location}</p>
           <img className="blog-image" src={this.props.imageurl} />
         </div>
       </>

@@ -5,7 +5,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // make the App component available
-import About from './About';
+import AddBlog from './AddBlog';
 
 import { MemoryRouter } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ it('renders without crashing', () => {
   const div = document.createElement('div');
 
   // render the component, this is the actual test, if something is wrong it will fail here
-  ReactDOM.render(<About />, div);
+  ReactDOM.render(<AddBlog />, div);
 
   // clean up code
   ReactDOM.unmountComponentAtNode(div);
@@ -26,7 +26,7 @@ it('renders without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(
     <MemoryRouter>
-      <About />
+      <AddBlog />
     </MemoryRouter>,
     div
   );

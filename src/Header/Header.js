@@ -25,6 +25,11 @@ export default function Header() {
               Guestbook
             </Link>
           </li>
+          <li>
+            <Link to="/addblog" className="nav-links">
+              Post
+            </Link>
+          </li>
         </ul>
       </nav>
       <h2 className="main-note"> Welcome to Koffeeblog! What do you want to know about coffee?</h2>

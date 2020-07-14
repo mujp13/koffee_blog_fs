@@ -3,6 +3,7 @@ import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import BlogsPage from './BlogsPage/BlogsPage';
 import Guestbook from './Guestbook/Guestbook';
+import AddBlog from './AddBlog/AddBlog';
 import About from './About/About';
 import { Route } from 'react-router-dom';
 import KoffeeBlogContext from './KoffeeBlogContext/KoffeeBlogContext';
@@ -18,6 +19,12 @@ class App extends Component {
   addGuestbook = (gb) => {
     this.setState({
       guestbooks: [...this.state.guestbooks, gb],
+    });
+  };
+
+  addBlog = (up) => {
+    this.setState({
+      blogsss: [...this.state.blogs, up],
     });
   };
 
@@ -82,6 +89,7 @@ class App extends Component {
         <Route exact path="/" component={BlogsPage} />
         <Route exact path="/guestbook" component={Guestbook} />
         <Route exact path="/about" component={About} />
+        <Route exact path="/addblog" component={AddBlog} />
         <Footer />
       </KoffeeBlogContext.Provider>
     );
