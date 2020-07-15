@@ -6,9 +6,9 @@ export default function Header() {
   return (
     <header>
       <nav className="navbar">
-        <a className="logo">
+        <div className="logo">
           <Link to="/">KB</Link>
-        </a>
+        </div>
         <ul className="main-nav" id="js-menu">
           <li>
             <Link to="/about" className="nav-links">
@@ -32,7 +32,16 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      <h2 className="main-note"> Welcome to Koffeeblog! What do you want to know about coffee?</h2>
+      <h1 className="main-note">
+        {' '}
+        Welcome to Koffeeblog! <br></br>
+        <br></br> What do you want to know about coffee?
+      </h1>
+      <h2>
+        This page is about coffee! You can find information about coffee including types of coffee beans, drinks and
+        brewing methods. You are more than welcome to post your own blogs to any of the categories if you want to make
+        this website more informative.
+      </h2>
     </header>
   );
 }

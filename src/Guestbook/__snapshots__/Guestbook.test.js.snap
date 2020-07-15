@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <h2>
+    Thanks for visiting! Please come again!
+  </h2>,
+  <form
+    className="Login__form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="addGuestbook"
+      role="alert"
+    />
+    <div>
+      <label
+        htmlFor="name"
+      />
+      <input
+        id="name"
+        name="name"
+        placeholder="Name"
+        required={true}
+        type="text"
+      />
+    </div>
+    <div>
+      <label
+        htmlFor="comment"
+      />
+      <textarea
+        id="comment"
+        name="comment"
+        placeholder="Put your precious comments here"
+        required={true}
+      />
+    </div>
+    <div
+      className="send__button"
+    >
+      <button
+        className="button"
+        type="submit"
+      >
+        Send
+      </button>
+    </div>
+  </form>,
+  <section
+    className="guest-comment"
+  />,
+]
+`;

@@ -17,26 +17,37 @@ export default class BlogsPage extends Component {
     });
   };
 
+  componentDidMount() {
+    this.context.loadData();
+  }
+
   render() {
     return (
       <>
         <div className="blog-type">
-          {this.state.types.map((type) => (
-            <button className="type-button" onClick={(e) => this.changeType(type)}>
+          {this.state.types.map((type, index) => (
+            <button key={index} className="type-button" onClick={(e) => this.changeType(type)}>
               {type}
             </button>
           ))}
-          <div class="ph-clear"></div>
+          <div className="ph-clear"></div>
         </div>
         <div className="blog-list">
           {this.state.filteredType
             ? this.context.blogs
                 .filter((type) => type.typeid === this.state.filteredType)
-                .map((blog) => (
-                  <Blog title={blog.title} content={blog.content} imageurl={blog.imageurl} date={blog.date_published} />
+                .map((blog, index) => (
+                  <Blog
+                    key={index}
+                    title={blog.title}
+                    content={blog.content}
+                    imageurl={blog.imageurl}
+                    date={blog.date_published}
+                  />
                 ))
-            : this.context.blogs.map((blog) => (
+            : this.context.blogs.map((blog, index) => (
                 <Blog
+                  key={index}
                   title={blog.title}
                   content={blog.content}
                   imageurl={blog.imageurl}

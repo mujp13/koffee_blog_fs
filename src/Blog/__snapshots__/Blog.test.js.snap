@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="blog-item"
+>
+  <h2
+    className="blog-title"
+  />
+  <p
+    className="blog-content"
+  />
+  <button
+    onClick={[Function]}
+  >
+    Show More
+  </button>
+  <p>
+    Rating: 
+  </p>
+  <p>
+    Location: 
+  </p>
+  <img
+    className="blog-image"
+  />
+</div>
+`;

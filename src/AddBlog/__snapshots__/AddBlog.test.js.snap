@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <h2>
+    Add your own blog post here!
+  </h2>,
+  <form
+    className="add-blog-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="add-blog"
+      role="alert"
+    />
+    <p>
+      Type
+    </p>
+    <select
+      id="typeid"
+      name="typeid"
+    >
+      <option
+        value="Bean"
+      >
+        Bean
+      </option>
+      <option
+        value="Iced Coffee"
+      >
+        Iced Coffee
+      </option>
+      <option
+        value="Brewing"
+      >
+        Brewing
+      </option>
+      <option
+        value="Drinks"
+      >
+        Drinks
+      </option>
+    </select>
+    <div>
+       
+      <p>
+        Title
+      </p>
+      <textarea
+        id="title"
+        name="title"
+        placeholder="(i.e. Delicious Coffe)"
+        required={true}
+      />
+    </div>
+    <div>
+      <p>
+        Image URL(i.e. "...nameofphoto.jpg")
+      </p>
+      <textarea
+        id="imageurl"
+        name="imageurl"
+        placeholder="(i.e. www.webiste.com/photo.jpg)"
+      />
+    </div>
+    <div>
+       
+      <p>
+        Description
+      </p>
+      <textarea
+        id="content"
+        name="content"
+        placeholder="Put your description"
+        required={true}
+      />
+    </div>
+    <div>
+       
+      <p>
+        Rating(1~5)
+      </p>
+      <textarea
+        id="rating"
+        name="rating"
+        placeholder="(1: worst, 2: bad, 3: so-so, 4: great, 5: best)"
+      />
+    </div>
+    <div>
+       
+      <p>
+        Location
+      </p>
+      <textarea
+        id="location"
+        name="location"
+        placeholder="(i.e. CA, TX, WA)"
+      />
+    </div>
+    <br />
+    <input
+      className="submit-button"
+      type="submit"
+      value="Submit"
+    />
+  </form>,
+]
+`;

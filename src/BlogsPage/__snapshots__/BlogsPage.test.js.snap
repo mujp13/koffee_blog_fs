@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <div
+    className="blog-type"
+  >
+    <button
+      className="type-button"
+      onClick={[Function]}
+    >
+      Bean
+    </button>
+    <button
+      className="type-button"
+      onClick={[Function]}
+    >
+      Iced Coffee
+    </button>
+    <button
+      className="type-button"
+      onClick={[Function]}
+    >
+      Brewing
+    </button>
+    <button
+      className="type-button"
+      onClick={[Function]}
+    >
+      Drinks
+    </button>
+    <div
+      className="ph-clear"
+    />
+  </div>,
+  <div
+    className="blog-list"
+  />,
+]
+`;

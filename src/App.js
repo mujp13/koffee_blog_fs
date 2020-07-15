@@ -4,7 +4,6 @@ import Footer from './Footer/Footer';
 import BlogsPage from './BlogsPage/BlogsPage';
 import Guestbook from './Guestbook/Guestbook';
 import AddBlog from './AddBlog/AddBlog';
-import About from './About/About';
 import { Route } from 'react-router-dom';
 import KoffeeBlogContext from './KoffeeBlogContext/KoffeeBlogContext';
 
@@ -28,7 +27,7 @@ class App extends Component {
     });
   };
 
-  componentDidMount() {
+  loadData = () => {
     fetch('https://friendly-donair-37840.herokuapp.com/api/contents', {
       method: 'GET',
       headers: {
@@ -74,6 +73,10 @@ class App extends Component {
           });
         }
       );
+  };
+
+  componentDidMount() {
+    this.loadData();
   }
 
   render() {
@@ -81,6 +84,8 @@ class App extends Component {
       blogs: this.state.blogs,
       guestbooks: this.state.guestbooks,
       addGuestbook: this.addGuestbook,
+      addBlog: this.addBlog,
+      loadData: this.loadData,
     };
 
     return (
@@ -88,7 +93,6 @@ class App extends Component {
         <Header />
         <Route exact path="/" component={BlogsPage} />
         <Route exact path="/guestbook" component={Guestbook} />
-        <Route exact path="/about" component={About} />
         <Route exact path="/addblog" component={AddBlog} />
         <Footer />
       </KoffeeBlogContext.Provider>
